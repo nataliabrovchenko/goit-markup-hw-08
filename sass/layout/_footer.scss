@@ -1,0 +1,106 @@
+footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: var(--footer-background-color);
+}
+
+.footer-container {
+    display: flex;
+    align-items: baseline;
+    gap: 70px;
+}
+
+.address-container {
+    display: block;
+    margin-top: 20px;
+}
+
+.footer__address {
+    display: block;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    margin-bottom: 9px;
+    font-style: normal;
+    @include font(14px, 400, 1.71, 0.03em);
+    color: var(--primary-background-color);
+
+    &:focus,
+    &:hover {
+        color: var(--accent-color);
+    }
+}
+
+.footer__contacts {
+    display: block;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    margin-bottom: 9px;
+    font-style: normal;
+    @include font(14px, 400, 1.71, 0.03em);
+    color: rgba(255, 255, 255, 0.6);
+
+    &:focus,
+    &:hover {
+        color: var(--accent-color);
+    }
+}
+
+.footer__social-list {
+    display: flex;
+    gap: 10px;
+}
+
+.footer__social-link {    
+    display: flex;
+    justify-content: center;
+    align-items: center;;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    fill: var(--primary-background-color);
+
+    transition:  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color);
+    }
+}
+
+.footer__join-text {
+    margin-bottom: 20px;
+    @include font(14px, 700, 1.14, 0.03em);
+    text-transform: uppercase;
+    color: var(--primary-background-color);
+}
+
+.footer__subscribe-text {
+    margin-bottom: 20px;
+    @include font(14px, 700, 1.14, 0.03em);
+    text-transform: uppercase;
+    color: var(--primary-background-color);
+}
+
+.footer__subscribe-form {
+    display: flex;
+    align-items: center;
+}
+
+.footer__subscribe-input {
+    margin-right: 12px;
+    padding: 15px 16px;
+    width: 358px;
+    height: 50px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    color:#FFFFFF;
+
+    &::placeholder {
+        @include font(16px, 400, 1.25, 0.03em);
+        align-items: center;
+        color: rgba(255, 255, 255, 0.6);
+    }
+}

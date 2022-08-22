@@ -1,0 +1,21 @@
+ .logo {
+    margin-right: 90px;
+
+    &:focus {
+        color: var(--accent-color);
+    }
+}
+.logo-web {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    @include font(26px, 700, 1.19, 0.03em);
+    color: var(--accent-color);
+}
+
+.logo-studio-header {
+    color: var(--second-logo-color);
+}
+
+.logo-studio-footer {
+    color: var(--primary-background-color);
+}
