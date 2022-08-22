@@ -25,6 +25,13 @@
                 <li class="menu__item"><a href="" class="menu__link">Контакты</a></li>
             </ul>
         </nav>
+        <!-- ===MOBILE-BTN=== -->
+        <button type="button" class="mobile-menu-open" data-menu-open>
+            <svg class="mobile-menu-open__icon" width="40" height="40">
+                <use href="./images/modal-close.svg#icon-burger"></use>
+            </svg>
+        </button>
+        <!-- ===/MOBILE-BTN=== -->
         <ul class="contacts-menu list">
             <li class="contacts-menu__item">
                 <a href="mailto:info@devstudio.com" class="contacts-menu__link">
@@ -35,18 +42,33 @@
                     <svg class="icon-smartphone" width="10px" height="16px">
                         <use href="./images/icon.svg#icon-smartphone"></use></svg>+38 096 111 11 11</a></li>
         </ul>    
+       </div>
+           <!-- ===MOBILE-close-btn=== -->
+       <div class="mobile-menu" data-menu>
+            <div class="container mobile-menu__container">
+                <button class="mobile-menu__close-btn" data-menu-close>
+                    <svg class="mobile-menu__close-btn-icon" width="40" height="40">
+                        <use href="./images/modal-close.svg#icon-close-burger"></use>
+                    </svg>
+                </button>
+                <ul class="menu-mobile__list list">
+                    <li class="menu-mobile__item"><a href="./index.html" class="menu__link menu__link_current">Студия</a></li>
+                    <li class="menu-mobile__item"><a href="./portfolio.html" class="menu__link">Портфолио</a></li>
+                    <li class="menu-mobile__item"><a href="" class="menu__link">Контакты</a></li>
+                </ul>
+            </div>   
        </div>           
     </header>
     <main>
         <!-- ===HERO=== -->
-        <section class="hero section">
+        <!-- <section class="hero section">
             <div class="container">
                 <h1 class="hero__title">Эффективные решения<br>для вашего бизнеса</h1>
                 <button type="button" data-modal-open class="button-hero">Заказать услугу</button>
             </div>
-        </section>
+        </section> -->
         <!-- ===FEATURES=== -->
-        <section class="features features-section">
+        <!-- <section class="features features-section">
             <div class="container">
                 <ul class="features-container list">
                     <li class="features__item">
@@ -87,9 +109,9 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
         <!-- ===WORK=== -->
-        <section class="work section">
+        <!-- <section class="work section">
             <div class="container">
                 <h2 class="work__title">Чем мы занимаемся</h2>
                 <ul class="work-container list">
@@ -104,9 +126,9 @@
                         <p class="work__text">Дизайнерские решения</p></li>
                 </ul>
             </div>
-        </section>
+        </section> -->
         <!-- ===EMPLOYEES=== -->
-        <section class="employees section">
+        <!-- <section class="employees section">
            <div class="container">
                 <h2 class="employees__title">Наша команда</h2>
                     <ul class="employees-container list">
@@ -146,8 +168,8 @@
                                     </li>
                                 </ul>
                             </div>
-                        </li>
-                        <li class="employees__card">
+                        </li> -->
+                        <!-- <li class="employees__card">
                             <img src="./images/employees/repina.jpg" alt="Сотрудник2" width="270" height="260">
                             <div class="employees__card-container">
                                 <h3 class="emloyees__name">Ольга Репина</h3>
@@ -179,8 +201,8 @@
                                             <svg class="social-list__icon" width="20px" height="20px">
                                                 <use href="./images/icon.svg#icon-linkedin"></use>
                                             </svg>
-                                        </a>
-                                    </li>
+                                        </a> -->
+                                    <!-- </li>
                                 </ul>
                             </div>                         
                         </li>
@@ -220,8 +242,8 @@
                                     </li>
                                 </ul>
                             </div>
-                        </li>
-                        <li class="employees__card">
+                        </li> -->
+                        <!-- <li class="employees__card">
                             <img src="./images/employees/ermakov.jpg" alt="Сотрудник4" width="270" height="260">
                             <div class="employees__card-container">
                                 <h3 class="emloyees__name">Михаил Ермаков</h3>
@@ -260,9 +282,9 @@
                         </li>
                     </ul>
             </div>
-        </section>
+        </section> -->
         <!-- ===CLIENTS=== -->
-        <section class="clients section">
+        <!-- <section class="clients section">
             <div class="container">
                 <h2 class="clients__title">Постоянные клиенты</h2>
                 <ul class="clients__list list">
@@ -296,8 +318,8 @@
                                 <use href="./images/icon.svg#icon-Logo-4"></use>
                             </svg></a>
                     </li>
-                    <li>
-                        <a href="" class="clients__link">
+                    <li> -->
+                        <!-- <a href="" class="clients__link">
                             <svg class="icon-clients" width="106px" height="60px">
                                 <use href="./images/icon.svg#icon-Logo-5"></use>
                             </svg></a>
@@ -305,9 +327,9 @@
                 </ul>
             </div>
         </section>
-    </main>
+    </main> -->
    <!-- ===FOOTER=== -->
-   <footer class="footer">
+   <!-- <footer class="footer">
         <div class="footer-container container">
             <div>
                 <a href="./index.html" class="logo-web">Web<span class="logo-studio-footer">Studio</span></a>
@@ -343,8 +365,8 @@
                             </svg>
                         </a></li>
                 </ul>
-            </div>
-            <div class="footer__subscribe">
+            </div> -->
+            <!-- <div class="footer__subscribe">
                 <p class="footer__subscribe-text">Подпишитесь на рассылку</p>
                 <form class="footer__subscribe-form">
                     <label for="footer__subscribe-input">
@@ -358,7 +380,7 @@
                 </form>
             </div> 
         </div>
-    </footer>
+    </footer> -->
 
 
      <!-- ===MODAL WINDOW=== -->
@@ -427,7 +449,7 @@
             </form>
         </div>
     </div>
-
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
 </body>
 </html>
