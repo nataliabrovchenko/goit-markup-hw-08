@@ -1,6 +1,7 @@
 .employees-container {
     display: flex;
     flex-direction: column;
+    align-content: center;
 }
 
 .employees {
@@ -16,10 +17,6 @@
 
 .employees__card {
     background-color: var(--primary-background-color);
-
-    &:not(:last-child) {
-        margin-right: 30px;
-    }
 }
 
 .employees__card-container {

@@ -612,7 +612,7 @@ img {
   margin-right: auto;
   padding-top: 118px;
   padding-bottom: 118px;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero-mobile.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/hero-mobile.jpg);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -631,7 +631,7 @@ img {
 
 @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px), screen and (min-resolution: 192dpi) and (max-width: 767px), screen and (min-resolution: 2dppx) and (max-resolution: 767px) {
   .hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero-mobile@2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/hero-mobile@2x.jpg);
   }
 }
 @media screen and (min-width: 768px) {
@@ -764,6 +764,7 @@ img {
 .employees-container {
   display: flex;
   flex-direction: column;
+  align-content: center;
 }
 
 .employees {
@@ -782,9 +783,6 @@ img {
 
 .employees__card {
   background-color: var(--primary-background-color);
-}
-.employees__card:not(:last-child) {
-  margin-right: 30px;
 }
 
 .employees__card-container {
