@@ -974,10 +974,12 @@ footer {
   background-color: var(--footer-background-color);
 }
 
-.footer-container {
-  display: flex;
-  align-items: baseline;
-  gap: 70px;
+@media screen and (min-width: 1200px) {
+  .footer-container {
+    display: flex;
+    align-items: baseline;
+    gap: 70px;
+  }
 }
 
 .address-container {
@@ -1055,9 +1057,11 @@ footer {
   color: var(--primary-background-color);
 }
 
-.footer__subscribe-form {
-  display: flex;
-  align-items: center;
+@media screen and (min-width: 1200px) {
+  .footer__subscribe-form {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .footer__subscribe-input {
