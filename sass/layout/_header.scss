@@ -20,14 +20,16 @@ header {
 }
 
 .mobile-menu__container {
-    height: 100%;
     position: relative;
+    
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding-left: 25px;
     padding-top: 48px;
     padding-bottom: 48px;
+
+    height: 100%;
 }
 
 @media screen and (max-width: 767px) {
