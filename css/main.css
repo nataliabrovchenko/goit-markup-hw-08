@@ -455,13 +455,13 @@ a {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 1200px) {
   .section {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 
@@ -813,17 +813,6 @@ header {
   background-color: rgba(47, 48, 58, 0.8);
 }
 
-.section {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-@media screen and (min-width: 1200px) {
-  .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
-}
-
 .employees {
   background-color: var(--employee-background-color);
 }
@@ -923,13 +912,22 @@ header {
 }
 
 .clients__title {
-  margin-bottom: 50px;
-  font-size: 36px;
+  margin-bottom: 30px;
+  font-size: 28px;
   font-weight: 700;
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-align: center;
   color: var(--primary-text-color);
+}
+@media screen and (min-width: 1200px) {
+  .clients__title {
+    margin-bottom: 50px;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+  }
 }
 
 .clients__list {
