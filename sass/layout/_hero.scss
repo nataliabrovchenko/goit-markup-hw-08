@@ -1,4 +1,5 @@
 .hero {
+        max-width: 1600px; 
         min-height: 400px;
         margin-left: auto;
         margin-right: auto;
@@ -13,19 +14,19 @@
             to right,
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
-            url(../../images/hero-mobile.jpg);
+            url(.././images/hero-mobile.jpg);
         
 }
 
 @media screen and (min-device-pexel-ratio: 2) and (max-width: 767px),
-screen and (min-resolution: 192dpi) and (max-width: 767px),
-screen and (min-resolution: 2dppx) and (max-width: 767px) {
+  screen and (min-resolution: 192dpi) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (max-width: 767px) {
         .hero {
             background-image: linear-gradient(
                 to right,
                 rgba(47, 48, 58, 0.4),
                 rgba(47, 48, 58, 0.4)),
-                url(../../images/hero-mobile@2x.jpg)
+                url(.././images/hero-mobile@2x.jpg)
         }
 }
 
@@ -36,7 +37,7 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
             to right,
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
-            url(../../images/hero-tablet.jpg)
+            url(.././images/hero-tablet.jpg)
     }
 }
 
@@ -48,7 +49,7 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
                 to right,
                 rgba(47, 48, 58, 0.4),
                 rgba(47, 48, 58, 0.4)),
-                url(../../images/hero-tablet@2x.jpg)
+                url(.././images/hero-tablet@2x.jpg)
         }
 }
 
@@ -62,7 +63,7 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
             to right,
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
-            url(../../images/hero-desktop.jpg)
+            url(.././images/hero-desktop.jpg)
     }
    
 }
@@ -75,7 +76,7 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
                 to right,
                 rgba(47, 48, 58, 0.4),
                 rgba(47, 48, 58, 0.4)),
-                url(../../images/hero-desktop@2x.jpg)
+                url(.././images/hero-desktop@2x.jpg)
         }
 }
 
@@ -89,50 +90,3 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
         @include font(44px, 900, 1.36, 0.06em);
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// .hero {
-//     max-width: 1600px;
-//     margin-left: auto;
-//     margin-right: auto;
-//     padding-top: 200px;
-//     padding-bottom: 200px;
-//     background-image: linear-gradient(
-//         to right,
-//         rgba(47, 48, 58, 0.4),
-//         rgba(47, 48, 58, 0.4)),
-//         url(../images/herotitle.jpg);
-//     background-position: center;
-//     background-size: contain;
-//     background-repeat: no-repeat;
-//     background-color: #C4C4C4;
-// }
-
-// .hero__title {
-//     @include font(44px, 900, 1.36, 0.06em);
-//     text-align: center;
-//     text-transform: uppercase;
-//     color: var(--primary-background-color);
-// }

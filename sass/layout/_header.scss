@@ -63,7 +63,7 @@ header {
     .menu__link {
             position: relative;
             padding-top: 26px;
-            padding-bottom: 36px;
+            padding-bottom: 33px;
             @include font(14px, 500, 1.14, 0.02em);
             color: var(--primary-text-color);
         
@@ -98,8 +98,9 @@ header {
     }
 
     .contacts-menu__link {
-            padding-top: 24px;
-            padding-bottom: 24px;
+            display: flex;
+            align-items: center;
+           
             @include font(14px, 500, 1.14, 0.02em);
             color: var(--title-text-color);
         

@@ -19,6 +19,8 @@
         left: 0;
         z-index: 1000;
         background-color: var(--primary-background-color);
+
+        transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
         opacity: 0;
         visibility: hidden;
@@ -36,8 +38,6 @@
         opacity: 1;
         visibility: visible;
         pointer-events: auto;
-    
-        transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
     
     .mobile-menu__close-btn {
@@ -51,11 +51,30 @@
         border: none;
         line-height: 0;
     }
+    .mobile-menu-open__icon {
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover,
+        &:focus {
+            fill: var(--accent-color);
+        }
+    }
+
+    .mobile-menu__close-btn-icon {
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover,
+        &:focus {
+            fill: var(--accent-color);
+        }
+    }
+
     .mobile-menu__list {
         display: flex;
         flex-direction: column;
         gap: 32px;
-        margin-bottom: 302px;
+        margin-bottom: auto;
+        padding-left: 25px;
     }
     .mobile-menu__link {
         font-weight: 500;
@@ -70,12 +89,17 @@
         &:focus {
             color: var(--accent-color);
         }
-        }
+    }
+    .menu-mobile__link_current {
+        color: var(--accent-color)
+    }
+
     .mobile-menu__contacts {
         display: flex;
         flex-direction: column;
         gap: 32px;
         margin-bottom: 64px;
+        padding-left: 25px;
     }
     .mobile-menu__link-tel {
             font-weight: 500;
@@ -91,9 +115,12 @@
             letter-spacing: 0.02em;
             color: var(--title-text-color);
     }
+    
     .mobile-menu__social {
         display: flex;
+        flex-wrap: wrap;
         gap: 10px;
+        padding-left: 25px;
     }
     .mobile-menu__social-link {
         font-weight: 500;
@@ -109,8 +136,7 @@
             height: 0px;
             border: 1px solid rgba(33, 33, 33, 0.2);
             transform: rotate(90deg);
-    } 
-  
+    }   
 }
 
 
