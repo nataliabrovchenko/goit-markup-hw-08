@@ -6,7 +6,6 @@
         padding-top: 118px;
         padding-bottom: 118px;
         background-position: center;
-        background-size: contain;
         background-repeat: no-repeat;
         background-color: #C4C4C4;
         background-size: 480px 400px;
@@ -15,7 +14,11 @@
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
             url(.././images/hero-mobile.jpg);
-        
+
+        @media screen and (min-width: 1200px) {
+            padding-top: 200px;
+            padding-bottom: 200px;
+        }
 }
 
 @media screen and (min-device-pexel-ratio: 2) and (max-width: 767px),
@@ -53,24 +56,21 @@
         }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
     .hero {
-            min-height: 600px;
-            padding-top: 200px;
-            padding-bottom: 200px;
             background-size: 1600px 600px;
+            background-size: cover;
             background-image: linear-gradient(
             to right,
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
             url(.././images/hero-desktop.jpg)
-    }
-   
+    }   
 }
 
-@media screen and (min-device-pexel-ratio: 2) and (min-width: 769px),
-  screen and (min-resolution: 192dpi) and (min-width: 769px),
-  screen and (min-resolution: 2dppx) and (min-width: 769px) {
+@media screen and (min-device-pexel-ratio: 2) and (min-width: 768px),
+  screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px) {
         .hero {
             background-image: linear-gradient(
                 to right,
@@ -79,6 +79,10 @@
                 url(.././images/hero-desktop@2x.jpg)
         }
 }
+
+
+
+
 
 .hero__title {
     @include font(26px, 900, 1.62, 0.06em);

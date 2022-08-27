@@ -35,11 +35,12 @@
 .employees__title {
     margin-bottom: 30px;
     text-align: center;
-    @include font(36px, 700, 1.17, 0.03em);
+    @include font(28px, 700, 1.18, 0.03em);
     color: var(--primary-text-color);
     
     @media screen and (min-width: 1200px) {
-        margin-bottom: 50px; 
+        margin-bottom: 50px;
+        @include font(36px, 700, 1.17, 0.03em);
     }
 }
 
